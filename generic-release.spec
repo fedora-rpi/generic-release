@@ -4,13 +4,14 @@
 Summary:	Generic release files
 Name:		generic-release
 Version:	20
-Release:	1
+Release:	2
 License:	GPLv2
 Group:		System Environment/Base
 Source:		%{name}-%{version}.tar.gz
 Obsoletes:	redhat-release
-Provides:	redhat-release = %{version}-%{release}
-Provides:	system-release = %{version}-%{release}
+Provides:	redhat-release
+Provides:	system-release
+Provides:	system-release(release)
 # Comment this out if we're building for a non-rawhide target
 # Requires:	generic-release-rawhide = %{version}-%{release}
 BuildArch:	noarch
@@ -133,6 +134,9 @@ rm -rf $RPM_BUILD_ROOT
 %config(noreplace) /etc/yum.repos.d/fedora-rawhide.repo
 
 %changelog
+* Sat Dec 21 2013 Bruno Wolff III <bruno@wolff.to> - 20-2
+- Changed to work with recent yum change (bug 1040607)
+
 * Mon Dec  9 2013 Tom Callaway <spot@fedoraproject.org> - 20-1
 - final release (disable rawhide dep)
 
