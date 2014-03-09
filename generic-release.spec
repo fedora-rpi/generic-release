@@ -4,7 +4,7 @@
 Summary:	Generic release files
 Name:		generic-release
 Version:	20
-Release:	2
+Release:	3
 License:	GPLv2
 Group:		System Environment/Base
 Source:		%{name}-%{version}.tar.gz
@@ -96,8 +96,8 @@ for file in fedora*repo ; do
 done
 
 # Set up the dist tag macros
-install -d -m 755 $RPM_BUILD_ROOT/etc/rpm
-cat >> $RPM_BUILD_ROOT/etc/rpm/macros.dist << EOF
+install -d -m 755 $RPM_BUILD_ROOT%{_rpmconfigdir}/macros.d
+cat >> $RPM_BUILD_ROOT%{_rpmconfigdir}/macros.d/macros.dist << EOF
 # dist macros.
 
 %%fedora		%{dist_version}
@@ -121,7 +121,7 @@ rm -rf $RPM_BUILD_ROOT
 %config(noreplace) /etc/yum.repos.d/fedora-updates*.repo
 %config(noreplace) %attr(0644,root,root) /etc/issue
 %config(noreplace) %attr(0644,root,root) /etc/issue.net
-%attr(0644,root,root) /etc/rpm/macros.dist
+%attr(0644,root,root) %{_rpmconfigdir}/macros.d/macros.dist
 %dir /etc/pki/rpm-gpg
 /etc/pki/rpm-gpg/*
 
@@ -134,6 +134,9 @@ rm -rf $RPM_BUILD_ROOT
 %config(noreplace) /etc/yum.repos.d/fedora-rawhide.repo
 
 %changelog
+* Sun Mar 09 2014 Bruno Wolff III <bruno@wolff.to> - 20-3
+- Put dist macro file in the correct directory
+
 * Sat Dec 21 2013 Bruno Wolff III <bruno@wolff.to> - 20-2
 - Changed to work with recent yum change (bug 1040607)
 
