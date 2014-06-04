@@ -1,0 +1,514 @@
+From 9b68bb9ed1f105cdce4e64db748324e33d6f4680 Mon Sep 17 00:00:00 2001
+From: Lubomir Rintel <lkundrak@v3.sk>
+Date: Tue, 3 Jun 2014 19:31:13 +0200
+Subject: [PATCH] Add Pidora repositories
+
+---
+ RPM-GPG-KEY-fedora-19-primary   | 29 -------------------
+ RPM-GPG-KEY-fedora-19-secondary | 62 -----------------------------------------
+ RPM-GPG-KEY-fedora-20-primary   | 29 -------------------
+ RPM-GPG-KEY-fedora-20-secondary | 62 -----------------------------------------
+ RPM-GPG-KEY-fedora-21-primary   | 29 -------------------
+ RPM-GPG-KEY-fedora-21-secondary | 62 -----------------------------------------
+ RPM-GPG-KEY-pidora-20           | 30 ++++++++++++++++++++
+ fedora-updates-testing.repo     | 27 ++++++++----------
+ fedora-updates.repo             | 27 ++++++++----------
+ fedora.repo                     | 27 ++++++++----------
+ 10 files changed, 66 insertions(+), 318 deletions(-)
+ delete mode 100644 RPM-GPG-KEY-fedora-19-primary
+ delete mode 100644 RPM-GPG-KEY-fedora-19-secondary
+ delete mode 100644 RPM-GPG-KEY-fedora-20-primary
+ delete mode 100644 RPM-GPG-KEY-fedora-20-secondary
+ delete mode 100644 RPM-GPG-KEY-fedora-21-primary
+ delete mode 100644 RPM-GPG-KEY-fedora-21-secondary
+ create mode 100644 RPM-GPG-KEY-pidora-20
+
+diff --git a/RPM-GPG-KEY-fedora-19-primary b/RPM-GPG-KEY-fedora-19-primary
+deleted file mode 100644
+index 9787950..0000000
+--- a/RPM-GPG-KEY-fedora-19-primary
++++ /dev/null
+@@ -1,29 +0,0 @@
+------BEGIN PGP PUBLIC KEY BLOCK-----
+-Version: GnuPG v1.4.11 (GNU/Linux)
+-
+-mQINBFC5a/0BEAD3LjUH329eJjBCdQ60m5wG9U/QToy/sEsx6+q/012wXPMFBMCW
+-1h53ISj1uEyHd++qMn71u/GtWnRTwvPaxUUqdNiFQpTMAmY41JIdXmOzUYj9u3h/
+-dLQJT7wKbKHQrfDnapT2O3eIyYuj07iPTtaIrUE8AZ/wVmrJ0xnLDeir2FfC3h3V
+-mqFo7OAK193FdufYYT5YQlY4jJrgwo7KDjLEh9ZrB42Fj4+MXgjeX3K+gel/GwiS
+-b/KahgB9bywUcstvDWoXfbhHmf0fw3SmRY+5B0wWp1un7uepsE+JJ69G4gwfgcln
+-49JrYBGFdMBuvX6e3Dw5hUZ+rRtUn911qIO9uPR+SCJqf4ttzs9U0VSdLDUfFAv+
+-Isb4WOXF8UF0QbN/Cl+EMs9eiN+MNCvYWRDcnsGTeEmIDhABqwfkrOXNpMHm1FNa
+-P98QVc9TpBojes3KwmkTolAW92lgznYbpeN9nsv4BLT+hnBJGIegsgq78E1fa557
+-l+am+qerljlHWapVB+107qdNBNxeOAUA6DdXH9B6XZju1+M4kjYrtzKraUCUMZZ9
+-JebOKMerF++fjdSqmJM8LbNIwcfDtqBqMBBrbiIhlysiFBIItBOK+KCOQ+s95had
+-J/kFbo1doFUc+k4+ltMwsQGhRoWeSpr3Xl5ohGCnF9k9PwnlBzGx8I+xWwARAQAB
+-tCZGZWRvcmEgKDE5KSA8ZmVkb3JhQGZlZG9yYXByb2plY3Qub3JnPokCOAQTAQIA
+-IgUCULlr/QIbDwYLCQgHAwIGFQgCCQoLBBYCAwECHgECF4AACgkQB0d+ZftLGOYR
+-mA/+KAam9+c6wmJauLOY5dHMxd5UxsfPz3YsTKNLVDwt/ohRze4hXcH/Wt4bOfk8
+-FSO35xzP4ynXpUZDfrDJsz4QNOpGTIyQCJdCHr8n+RR6IDMSVF9e8uOMoCfwE/Nw
+-erLD4KGI6S1+bffcEA6YTxQod+4WMEJlkLToTfEBtxksxGMoW3xdwINDT13jQivm
+-zktoGbOQE6zSSNVaaA94xSw5AbiYXUqfIvvJBmCPeM89ctTC5tTyNsQAN8n0QJtD
+-lKT3hPfT8H4gacqiecXBJ6fpuWMXY4t044JBPmOk5Nlr0TEJ3m0jmPc1A6f+h+/Y
+-flBLVIGx+Bw+LIrfxAfrn03XLyleDEO9kvC7q1zxnezKdcxtVXfI5bDQZELWMT1b
+-KVQvje3KuEZ0IrRwV3qKKucBNqd0k2F6O0ovLMorenLMyBl9SDpOWt67roJeANiq
+-BFFJkNuDqBtHgzgY7053Lj7VMoIeOtBpRf6WM7m8MaI0gXTgjZrhPPynqdFmDtvd
+-6IqBYVFvUgIqPM36Scev2CMpok/g8KBzaHKljim+xSI4wziu3Kfxb854P/Df9WZd
+-bCDWpFdPY5/dCnoMgTHGKLUumUMlfXif+fEykNt4Ic9Fibkzv+QSHQ5YYtoTfp9i
+-o7puEJiQxkQsuX/CcXU9NDL6MeBBNS/b67EqnObAIRzroHY=
+-=apZ8
+------END PGP PUBLIC KEY BLOCK-----
+diff --git a/RPM-GPG-KEY-fedora-19-secondary b/RPM-GPG-KEY-fedora-19-secondary
+deleted file mode 100644
+index 38963ed..0000000
+--- a/RPM-GPG-KEY-fedora-19-secondary
++++ /dev/null
+@@ -1,62 +0,0 @@
+------BEGIN PGP PUBLIC KEY BLOCK-----
+-Version: GnuPG v1.4.11 (GNU/Linux)
+-
+-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
+-=cM40
+------END PGP PUBLIC KEY BLOCK-----
+diff --git a/RPM-GPG-KEY-fedora-20-primary b/RPM-GPG-KEY-fedora-20-primary
+deleted file mode 100644
+index 96dae1d..0000000
+--- a/RPM-GPG-KEY-fedora-20-primary
++++ /dev/null
+@@ -1,29 +0,0 @@
+------BEGIN PGP PUBLIC KEY BLOCK-----
+-Version: GnuPG v1.4.11 (GNU/Linux)
+-
+-mQINBFGVT8oBEADiEFecKV2eDgaIoK6O/+2UxTGYHpVJYHj7Jl2EGHZWJ3jaN2xD
+-slXrhgurZZaXl1Cb1vplFIrMtC4rUxyKWwGPRa3jo9MkSgpwqFsYnKsFxo9Vu/9Z
+-XRAD6x4KfSl1J+c56qjKaBA3e873pcapBSWaw/gWCIxDQzhhiqYEdqFiu3PfbTvB
+-YT1Zp3QqN5TW61Rs/Uq8WkoOLKhAnucuvrfqapAVN5Hc2JWeh32sLNLdXfo3XnWd
+-VksqfXHnt9cr9I4ErsJ0KyBZFx36d7rQ3VoPKYDBtL8ZhwNkgJ6QVIZl1u33SPAF
+-QbsetNtQhnN8Nx6ks6e5+mTOGz1HneD36wU1zeUxSFCFoD4W+bvUTpquTlDRRZXk
+-GlkSqUBxxAD8vQm55+cVhrwaTRT80vJFYXNPx47zNih7xZVznwzzGCG3cWlKlhhO
+-KZMXtmgW0KSi7ICb3KUU0e5njP3OBkeB7N2o9le2Qtf7t6LfJdwY13dS4c05olhe
+-j7pEO+qVGBWgaC+plbiYCh1MQedb7dkjUPByTiHVpBUQH4aktLqLd/0Dt6fqxMh+
+-MhxglZW7iVfTcfCqfQfNmyctD2t/fQzyfR9tYd5oIO5dep9Q2aIXlf4TJ3m392v3
+-Dxz47P1L9l6kATflx1nj2tG1U6qP0ePlkDjDD9XIL9cKZ08UXaTiHYY/qQARAQAB
+-tCZGZWRvcmEgKDIwKSA8ZmVkb3JhQGZlZG9yYXByb2plY3Qub3JnPokCOAQTAQIA
+-IgUCUZVPygIbDwYLCQgHAwIGFQgCCQoLBBYCAwECHgECF4AACgkQLrFh+iRhEMGm
+-2Q//R1h9bBgdF4w9ZWM0ny5rx/DzXQCDP4CKMEhzvJXAPZuSDtWa+PkppGp4rq49
+-1GwGRs3CGF3UikX6Mqr0TbZiGpXZ+5MaXlgU59ULtvHaRGKYK5lvoeLyOZpBB0vo
+-yqBuCGnHPbHyJjilwMXp91LNdbRu3yHYNFgr/ZLQcJ/66UMnawX2Hb4fTcUPKb+X
+-r57gmERlRBSTbAPSM8WfCtQh1GtxLJT7rW8ayeD8DFnNB3oaTKqOyH1p2Cxxv4qi
+-xUCEx0k57TfCRcBzrb4CPG15phmLbCBFm+jdDNboi+LYIHAj9XU1znJm/lHLAHNI
+-cF6/9UwObs0L2i/yWqVJaj0fQ4hhhz7l2SOnzZH7SPj2irNkxGNMHrDXNESNZgzR
+-AnnteEMHv3UMJfDdn0llet7sP+7wVJEpBJaU+e1rZBvgM0KvQt53xKkCgLN8kVpn
+-JtbJ8DXvlt7yeCIRfhHJFvhY7+hdZqSygzOSUPeUcr+0VKgBjByUWdbAQV13TKo4
+-a4B+t7Fzj5UT9xKGqebv0CEnKI210ONg9Oj2NZU2PaPLTveiGe1BbEvazdNbd7Ts
+-zasvA0Wp12xIyJpeJwe6TNNR9lLDkj9fhvLUH0o+6bPyHas4hrhcZsQa/trSyiiS
+-XFz25bVz+AZ0b3aEcABLDCpG8nMOPiSSE6uccRAlW7muFOw=
+-=EJ/7
+------END PGP PUBLIC KEY BLOCK-----
+diff --git a/RPM-GPG-KEY-fedora-20-secondary b/RPM-GPG-KEY-fedora-20-secondary
+deleted file mode 100644
+index 2b8ff4c..0000000
+--- a/RPM-GPG-KEY-fedora-20-secondary
++++ /dev/null
+@@ -1,62 +0,0 @@
+------BEGIN PGP PUBLIC KEY BLOCK-----
+-Version: GnuPG v1.4.11 (GNU/Linux)
+-
+-mQINBFIgukEBEACt9A1y7P5zOX5Kp9t5B7l+VNYN5wTT+askwrnM5uzChMBihP9K
+-HfebF4pXHreWWsGswA41T/cr1K778Iod14IE744krcca83tphY7q67nxSa9j+RK2
+-UuM9tmq33o3T/d3HDRVPWOrXPSgqeuX5+blfSLAS6cTInmAGHwqX7ktfkBMQSGuS
+-U0NEpHZ/P8a4zfUfaQ+6ZYQO6M3li8ceGGLBqFmbQ5rKXZG45kWnevogq1HN+KTM
+-adERJHw6tiMEfeb5MgLE7GQ5Em8K1vGD+/1tgOSeWYXtfwIUP5wroE+4UqGNpDbx
+-n8FizldVFjvum+C9Fz2QG4tsSsjuoJQufg+u3naxS/SmNfRvKZFJLCWynET9yrru
+-+0Le92u1OpIgKoNUPFooK+6FvZxVA+sgnL3Uuoy8E9Nmc2OqlX/9qdbcVKYU6uIu
+-EPj64ZtXpVcpEyXPKQ4ouCd5kYECkVUw4odhbJGQoSbKsXb5o0CMjDS6Wyl3VStk
+-YoscINxX81Z9EyXUQ+WCYLzsqvp87172Bx+QhXp1ncA0yCx3qzDuRry1B9Kh2cMr
+-yVYRxDyD9etZp9L5bUWsshpoDgUW/OOTwtqcftP/4xkp0ATWo3SDxoxpLppOrvqt
+-tEeWSZ27mECu9yXn/bXRTdfBmxevgJ2rGXmZ41Q35/6P+hFj9QwqicZIyQARAQAB
+-tDBGZWRvcmEgU2Vjb25kYXJ5ICgyMCkgPGZlZG9yYUBmZWRvcmFwcm9qZWN0Lm9y
+-Zz6JAjgEEwECACIFAlIgukECGw8GCwkIBwMCBhUIAgkKCwQWAgMBAh4BAheAAAoJ
+-ENvq4uTv5VD1rQcP/iCcz+Mcsip5gyTgTqr/K2vkq9rMDHwrD0ZTwxBI/PTghVf1
+-KW6c7rnKtG0L4LA5lJ32WLI/Y14h3EL+vE0/kWWcaTqZu978LFn5nlnJaGXJg/E1
+-1dYzXHRsSGU8CS+Y3UtmVaKbO3GvVRY8h3Q4biQ1H3OTk+vhG96wGsx1zNZXRO2A
+-Vlkeu+uf9CVvJ3/METUEiabSHWzugU0RGEK55TV6dbu2Tkgm2uLFC0+MvQx/KUJT
+-2OcWj9oJAXfjCzeWndw0r1JblCXbXMN9mUhaecJz8NBjExHEL4Wpk2us9i2Wqah1
+-o2EhuMoC+hDU9i3NUKAUk7ovi9sx3hEm8Sni09iyJ5f8E56diKCpxcbedOjT6tcb
+-4B4NJlvmxEXEOmj9dop/dgiy8JNJl6KwSUvQliNUs6h+b0/+OoyHMSDTDwkUsQ+T
+-a7yzmL+utqUnT6l47Lhbb1lep0EvtwiJOxcra0lHESWFXcjmQosCIivpwpiVeaAY
+-1cDr34e+xsBruOPIRLjOlHyUTTPAY/NfZuvqBXxv53+eHMuFqpJ/mduEXiPbBDd9
+-KYKSmfA7D8mqFJ6eSwfw+uG7HALCYuPF+4KdVyisqc9Slw2nhhh6tBllf2Gt+Zk/
+-oQagIhbgXIzSm5tipNDfwGR2ZMqI2UyXVWqRJPMpUy2shuj58/pZqIgDzY8ouQQN
+-BFIgukEQEADk0ga5SKtyxRcEA2VmWLjkYZH8UMfNYLRzM6imj4a4bkzPJijg/8R8
+-wiMMmcIZavDoLerutc5MO8Y9g/laM+67UJYKcd48kLGGwdjFCAsbzyAPriQPekCg
+-fwKOYSkEoU0oAwQOieG8PDENrDFruodPbkeqLRwIvMOWUUGqEYwxEaHUOwIEVgH+
+-/XAQcI25NREUr9zNAum1pBbA2GjJVuflk5XNCIE1JFh+1DQMUZaMe1bQqasbRkp3
+-OV0CkDKnmSW5+4dgDVXZeL9+mO9E5NMKaV55lP+G1S2B5uexxy8OXF9Q9OI5JmuG
+-ELJVr0yHvw6R6ZZeVWUaEfkMRyljT6CrPFWhkhWZzc4pV4WEvL2RvX7Xze3HWLR2
+-+PGBOrBxU7Gj5UaU80+TkCqoWNBNOCLIYhVfspdBhmS4KWaJPcgoiu/HjG7s7tWw
+-bvyxE9stFidpO+QI7T0FesMac2tHsxWoLpyxH+Wg3hGL7Oq4UBtg9vMcny9dWESc
+-o5SxLEBofvGaYDaXNsX5iQo2twqWfRwc0Dy8zZdiiGCAJB0Q/oGphyndLwUcTltQ
+-B+d5R7i78S1GjRpRTWQfB9s5+Uh0ideqstGpsFoiTGIDLfhe53P+7qTTuXr1cFcQ
+-dmWYLrhjm6FncHgZncGFzXKp9K3DcMfKm+5S6zPtrIFdKIO1rUpAIwADBQ//Y1K2
+-7s1iVfbbxTgKo3/DMwXTwK0XQ4au/CuhNWefB4MPnWYw/hk3IZC0Z8FwNQco75ST
+-QVvS+z8+wtNZ++d0w8m5t+zuUK9CbqsDQkg09r7Q5ELtI2SfsUQYgNoqKvmHV0a6
+-XbWR4yni/qgjMfJZDxzwcYJkOTLAYGd4ks/6m/btwGpUnBfZKHT2OM2rFY4o2+kL
+-Q7M2QkSivPhhbwszhzpv2d+XfDjZl2LCW1WnRf1AMx14ZLi9EZuMvsQTHaqAmQzM
+-Ekc0wMccCvRrO54qQIQXi2XXapxCbnKoms9IqUNZiLXzdIcODhxRLkA1JFLhMnlf
+-kr57hxj8coaVvJqTG9itLRvlh03wSLA2Qb9I1HsbBJ+Ef8hISmBnBbjZcYiszZkZ
+-4FsDIguzKlHDjSabzkUdtChkQGk0fJ26N+FjjnpTEOlVhch2r00lFHm2hoaS1uTu
+-AuOp2Y09QekC9EN5hlDAeueS/M3BIKKkZDzQ37CLFtdjRfYpUx2FiTCabVZUoK0D
+-5X9qN2hcF2hQhZTvz8iQ72Tfj1xs4nukGUT1A8SGPTTFyGggW8mr2aSkrGP8VKNP
+-CaOIdlHnIbh2vEuMmuLUEhYoh88p3pqsFDG+EoUQzAYuMsd/yINbHtKN08V3pD9m
+-4tR0HWqwNALpH3lbPWi4WTqWHbv4nPm8Y96KRTyJAh8EGAECAAkFAlIgukECGwwA
+-CgkQ2+ri5O/lUPX18A/+LoLGWENDz7v60auSrwKwbYG8/t2izc+lz0mckO1aieFs
+-qmHOHlBOiG29xVEKLWjFxO2nzmoF/uH754+9JiqrvfS0KoZ+QyscqiNsbDqzQ2tP
+-B7/vgza9j+RM++yz4Dh1xrS2GmF/kFtPGa71PJVuBVcKirZnaU+IelcYclAM7+bM
+-W+KwHoq/DfcKJU6NzGE3F3h3gD7TTLjFvzADjeB0uPkwa0aSRGtxqjRrkk4y+XO0
+-C32xWMlzxOnauNc9DOi2Tx85hdBeSaGckiHxwB3UECBVTSMfOmLAaC7QnL6uHShW
+-sAukcMQzN4bLA3d4SmLnUJDezSCLp6e7BtrG97MI6Uc/WjmG9rpAG656QSS8D3Rd
+-juw+Undb5iW9Ry1JOrYMDOLkYNqairWRj0QdbPsYo+eBC0xYjJga5uVMwTBr5nFl
+-S/Q0dmb5ryLq+y3OTOPxvm+yj2QObJHSKhtbhP5FhfvcKcvHDVyQenCJj3jRZy5V
+-oKaBHsrp4Z4K9H9V4QUHJ5OkmHAgCViIw07XAiROWCAt6djfvuLTskfC6DJzYscl
+-+e1Lwmj8G+5m+n2feXFdoguQYtSxlFFf3opwLlfiI5NHlZ6Qa53+fEkcj8IMJ+td
+-NX4ZP2EXAvVxdA3+ghrLJauy9VdGRF9bYf8FckBOAGNL0TUZ2NgghtgzqOoKUCU=
+-=iUW0
+------END PGP PUBLIC KEY BLOCK-----
+diff --git a/RPM-GPG-KEY-fedora-21-primary b/RPM-GPG-KEY-fedora-21-primary
+deleted file mode 100644
+index 81916a1..0000000
+--- a/RPM-GPG-KEY-fedora-21-primary
++++ /dev/null
+@@ -1,29 +0,0 @@
+------BEGIN PGP PUBLIC KEY BLOCK-----
+-Version: GnuPG v1.4.11 (GNU/Linux)
+-
+-mQINBFKEQVoBEADOb9mKZZtTIVRMMejO9dco+dsv6L2ZvnlidMVaudoD7pN9hl35
+-xUZFwQxzATy2iCoFY92WU1zIKxCg9fa0gS9jGGl9rOI/1uQm+i/KxkzJCKW0CYpA
+-QVNNYHewQa7JHuTYbaN+kWEBGG0RWJw6BN2NxR3zDkLT2tgcf0zBobeUMi6XwFg4
+-jikJ/vi84MEX4Gky/OtVXuzk0fGnP7xYPYfBkfG5FbMj3UxbfAAn1Sr9PxIFdCxP
+-c06h9kkO+gJPD7Cis1pNg9HWpssIEHIk0ZaL0sssMSpSsgP0f44UpKVCq0+JDJmM
+-EEu2KfeV9r2dEiEude+Gg4U3rbUh2PTZpQKKwPyggQwk6nPHbrqrr9zBIH5iyYuU
+-vdTVO7YrDqYK5o3WhqKYG19oNbtCziNuC9x8RLFkerr0amQjy1dZsofGYSLjZ8Er
+-3PgtUMunH4Y7O6FbRljniqYoQl8GDMaxhptvrOY+NqRAQiRLzpT6BB3nZhO9iSk9
+-Lvb9hwjMFsN5xh2wCxYV+XNjnMSO+LZisJimKhyMVhimcYK1P0sU49RcglmS2mhP
+-OGb14pH+B94lMve/kQu4unnhKhtkPA0mOyeH8BGl63vvEbJtMzpMqbHvzr60h8PA
+-H7EsAsYJZp4Xa+F1wBRBJ3xKaUTQ7r7mmpFsdgzlI2wjNgLbyEV4YSNVjwARAQAB
+-tCZGZWRvcmEgKDIxKSA8ZmVkb3JhQGZlZG9yYXByb2plY3Qub3JnPokCOAQTAQIA
+-IgUCUoRBWgIbDwYLCQgHAwIGFQgCCQoLBBYCAwECHgECF4AACgkQia1Oh5WkP1S+
+-rQ//V5WOPjl0UjEgRYsjwm6LGZe8/P4muXdKX1OuRF+MLZxW1Pbr43zjvfY9tZlD
+-v4QpI5uECX5To9phrOXI8ghFpI4aQbRe2enk4dksgdhzdBW0JgM3JRf8F+tPLKEF
+-kB2/tGqi/irp+Hij/tiHwUZjx8qKGbF0r2bxAkSS5qkmalTs6PwcWwEN4a6sKPgw
+-iVGL2VRM46YoNDORwH7HYeODbJtyJyX3NvcluNKf/D3OZFaNYH+nUISlaPAbC5HJ
+-sVmZD9vm2E2ypErbZzrY3N8PRgHuIrDmO+LmksWteofpWZO84lyuvgYgXPy8Q3Ls
+-+p0zfE5zv8EbX4WG+l1SF7hVdPC7UEPUuHmlm81Fi69tSvwO+N4PrDU094VHT+UQ
+-rKmtSGDOfSx6FvrEqMakiEyBgKNwhsVJbi6/LXHMBImbSN3tOxSMBxGEi2cSn/KF
+-LRukmMoEw4PHZK+gPpwsP1cTfxezs/aH/PMBaPUgg1qCu9uNNFmEs3d5LLSee9RM
+-U+gwECX+D44vqJUAT7xM1A4yij3rPF2RegOmNhu5wg4zNSGKoVV8QsMOKrjIZHmG
+-pFVvYFP4OxLEwh6OYZj9qfaw445ryqfcxSNzZ3m+VSwHuZ049v7u8fndZ8TREVXx
+-hdjPHxjtaiJ1R0Zb4ZvycUcDLl2Xc1CRJAMVvFJcg1SNrGs=
+-=xtMc
+------END PGP PUBLIC KEY BLOCK-----
+diff --git a/RPM-GPG-KEY-fedora-21-secondary b/RPM-GPG-KEY-fedora-21-secondary
+deleted file mode 100644
+index 6c21496..0000000
+--- a/RPM-GPG-KEY-fedora-21-secondary
++++ /dev/null
+@@ -1,62 +0,0 @@
+------BEGIN PGP PUBLIC KEY BLOCK-----
+-Version: GnuPG v1.4.11 (GNU/Linux)
+-
+-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
+-=/oDi
+------END PGP PUBLIC KEY BLOCK-----
+diff --git a/RPM-GPG-KEY-pidora-20 b/RPM-GPG-KEY-pidora-20
+new file mode 100644
+index 0000000..31ac15a
+--- /dev/null
++++ b/RPM-GPG-KEY-pidora-20
+@@ -0,0 +1,30 @@
++-----BEGIN PGP PUBLIC KEY BLOCK-----
++Version: GnuPG v1.4.13 (GNU/Linux)
++
++mQGiBFLUHu4RBACPZPk2YjC1tVE6b72dXLe5/jeygh+abRtAG21CAdPA6swdVL1B
++Q0flrCJXi3jzen2U8/BV1hl/pdEgsDkMxrw/icgYE1nZVMjRpKMJ3RGzpxIqL5lG
++sdZZocQ+N/e9QFgvixlRnPl4A85W/eP4laj4L4FVaRPn1MPECI4xqAq7WwCgnJhM
++iNIKqCEiGLN/IJy5cg82RZMD/RHxQXx8H2kaLH/wA8mLZXnfqRDchf0D3PdpW5oG
++hPIyu/VufPS6uIMLplHHRU7NnzrcezA99Uuzw4OWOxD2AdtW1hOAUNiIJUsN80z4
++u+tku3HY8HeqnTXTJ8sj5bjHY0ZEmqb83gXGrb8dCkSKRnceuVahQHeAidTr0m5o
++nI/QA/4pKXEM4Y4mZ66S4fnFhcdmdOT+alSO44obSWubyjb+Eek2H5TPVFc45N+j
++0Q3tIv6sdSsUVe17ZDyQP87v+Q2lgdKaLAXF4CJk6AGqZovKB7BFlQwrVDF3NTxy
++QGu7Wfi6+fjHBN3xMY7dFIyLpIZOJk5lr1Fm5WSfx/Pxzx2Xd7QscGlkb3JhIChm
++ZWRvcmEyMHY2KSA8c2VuZWNhLnNpZ3VsQGdtYWlsLmNvbT6IYgQTEQIAIgUCUtQe
++7gIbAwYLCQgHAwIGFQgCCQoLBBYCAwECHgECF4AACgkQRINMD2f9GU9MnwCffjd/
++Z7OtdkwOnmV442objhwnl6kAn0UWG//HMz3Q/wbNbQBGClGIXVuNuQINBFLUHu4Q
++CACh6LF5r6iJTpYpEnkPKKqPYSJhrjmDzBugKS/7pXlphXAJjk6pXyhF7V93RkVN
++yywIxAEzMEIhgD4qOwajxaeUhHxMViVfV2aTpdzTUwMWEqs0XtItF1Wd26IqUtlo
++jc93IQtuCB1mfv1WtLHrLZlhmMB9KBItMt5ldomdbfcyjqEE8o9VZuYc8rRnxLTK
++DEHLYJmOfpP1exzZp/NtFPJ2iWUVDXlq5UuG59SMSCp2s8LNlNfesP1E/Y+qdn/K
++ilMPj2WsxGLzQ9LM6XZYkBajt81+qGzMui/rgBY/iQ3l/M+qmcUpgKp4iLBn07z2
++r3B85XUYbpA6qOfMbZJ7QhiLAAMGCACZM1PiEOoWZC6qxFHX3dHc9QnIThyLWgd+
++2N1+CFmOKQQMfpf9qz+MG/CEqy7NpW+YAervJhGXMyt4/U75aHz1HwwFKXeai6HO
++0QYy8cw8hf7NgBVv9tAGlX4XA6Rfj5IMsV/SzOtBAO0ts7p2i4OUdFErN+eBIdbM
++r6E2+qUcBpACr2ttMDDiUuxYgX6E7Dp3JbAP7vl2YhG177qL4fX1YlYBAWvsXr0z
++FWAspbJKnubhYWEOlIQ8tzNSFx9UF7JVrWAAXS+OPOInck1pwAf8CB6mk7BNP2YY
++HD4rl+vnXgs3E/mgaIL5Wtws874oABq/0VdsbJhh/y3YOu0/mg5siEkEGBECAAkF
++AlLUHu4CGwwACgkQRINMD2f9GU/mqACgjwAn0bNAOCYeqJauj7FWXamBlXUAn0Gg
++Da0sLeCfQSSntD7ByVkHPl8p
++=oQtn
++-----END PGP PUBLIC KEY BLOCK-----
+diff --git a/fedora-updates-testing.repo b/fedora-updates-testing.repo
+index 510f880..a21781e 100644
+--- a/fedora-updates-testing.repo
++++ b/fedora-updates-testing.repo
+@@ -1,29 +1,26 @@
+-[updates-testing]
+-name=Fedora $releasever - $basearch - Test Updates
++[pidora-updates-testing]
++name=pidora $releasever - $basearch
+ failovermethod=priority
+-#baseurl=http://download.fedoraproject.org/pub/fedora/linux/updates/testing/$releasever/$basearch/
+-metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-testing-f$releasever&arch=$basearch
++mirrorlist=http://pidora.proximity.on.ca/mirrorlist/mirrorlist.cgi?repo=pidora-updates-testing-$releasever&arch=$basearch
+ enabled=0
+ gpgcheck=1
+-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
++gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-pidora-20
+ skip_if_unavailable=False
+ 
+-[updates-testing-debuginfo]
+-name=Fedora $releasever - $basearch - Test Updates Debug
++[pidora-updates-testing-debuginfo]
++name=pidora-debuginfo $releasever - $basearch
+ failovermethod=priority
+-#baseurl=http://download.fedoraproject.org/pub/fedora/linux/updates/testing/$releasever/$basearch/debug/
+-metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-testing-debug-f$releasever&arch=$basearch
++mirrorlist=http://pidora.proximity.on.ca/mirrorlist/mirrorlist.cgi?repo=pidora-updates-testing-debuginfo-$releasever&arch=$basearch
+ enabled=0
+ gpgcheck=1
+-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
++gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-pidora-20
+ skip_if_unavailable=False
+ 
+-[updates-testing-source]
+-name=Fedora $releasever - Test Updates Source
++[pidora-updates-testing-source]
++name=pidora-source $releasever - $basearch
+ failovermethod=priority
+-#baseurl=http://download.fedoraproject.org/pub/fedora/linux/updates/testing/$releasever/SRPMS/
+-metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-testing-source-f$releasever&arch=$basearch
++mirrorlist=http://pidora.proximity.on.ca/mirrorlist/mirrorlist.cgi?repo=pidora-updates-testing-source-$releasever&arch=$basearch
+ enabled=0
+ gpgcheck=1
+-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
++gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-pidora-20
+ skip_if_unavailable=False
+diff --git a/fedora-updates.repo b/fedora-updates.repo
+index 3eae039..94d610b 100644
+--- a/fedora-updates.repo
++++ b/fedora-updates.repo
+@@ -1,29 +1,26 @@
+-[updates]
+-name=Fedora $releasever - $basearch - Updates
++[pidora-updates]
++name=pidora $releasever - $basearch
+ failovermethod=priority
+-#baseurl=http://download.fedoraproject.org/pub/fedora/linux/updates/$releasever/$basearch/
+-metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-released-f$releasever&arch=$basearch
++mirrorlist=http://pidora.proximity.on.ca/mirrorlist/mirrorlist.cgi?repo=pidora-updates-$releasever&arch=$basearch
+ enabled=1
+ gpgcheck=1
+-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
++gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-pidora-20
+ skip_if_unavailable=False
+ 
+-[updates-debuginfo]
+-name=Fedora $releasever - $basearch - Updates - Debug
++[pidora-updates-debuginfo]
++name=pidora-debuginfo $releasever - $basearch
+ failovermethod=priority
+-#baseurl=http://download.fedoraproject.org/pub/fedora/linux/updates/$releasever/$basearch/debug/
+-metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-released-debug-f$releasever&arch=$basearch
++mirrorlist=http://pidora.proximity.on.ca/mirrorlist/mirrorlist.cgi?repo=pidora-updates-debuginfo-$releasever&arch=$basearch
+ enabled=0
+ gpgcheck=1
+-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
++gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-pidora-20
+ skip_if_unavailable=False
+ 
+-[updates-source]
+-name=Fedora $releasever - Updates Source
++[pidora-updates-source]
++name=pidora-source $releasever - $basearch
+ failovermethod=priority
+-#baseurl=http://download.fedoraproject.org/pub/fedora/linux/updates/$releasever/SRPMS/
+-metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-released-source-f$releasever&arch=$basearch
++mirrorlist=http://pidora.proximity.on.ca/mirrorlist/mirrorlist.cgi?repo=pidora-updates-source-$releasever&arch=$basearch
+ enabled=0
+ gpgcheck=1
+-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
++gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-pidora-20
+ skip_if_unavailable=False
+diff --git a/fedora.repo b/fedora.repo
+index dbdc120..4f513aa 100644
+--- a/fedora.repo
++++ b/fedora.repo
+@@ -1,32 +1,29 @@
+-[fedora]
+-name=Fedora $releasever - $basearch
++[pidora]
++name=pidora $releasever - $basearch
+ failovermethod=priority
+-#baseurl=http://download.fedoraproject.org/pub/fedora/linux/releases/$releasever/Everything/$basearch/os/
+-metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-$releasever&arch=$basearch
++mirrorlist=http://pidora.proximity.on.ca/mirrorlist/mirrorlist.cgi?repo=pidora-$releasever&arch=$basearch
+ enabled=1
+ metadata_expire=7d
+ gpgcheck=1
+-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
++gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-pidora-20
+ skip_if_unavailable=False
+ 
+-[fedora-debuginfo]
+-name=Fedora $releasever - $basearch - Debug
++[pidora-debuginfo]
++name=pidora-debuginfo $releasever - $basearch
+ failovermethod=priority
+-#baseurl=http://download.fedoraproject.org/pub/fedora/linux/releases/$releasever/Everything/$basearch/debug/
+-metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-debug-$releasever&arch=$basearch
++mirrorlist=http://pidora.proximity.on.ca/mirrorlist/mirrorlist.cgi?repo=pidora-debuginfo-$releasever&arch=$basearch
+ enabled=0
+ #metadata_expire=7d
+ gpgcheck=1
+-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
++gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-pidora-20
+ skip_if_unavailable=False
+ 
+-[fedora-source]
+-name=Fedora $releasever - Source
++[pidora-source]
++name=pidora-source $releasever - $basearch
+ failovermethod=priority
+-#baseurl=http://download.fedoraproject.org/pub/fedora/linux/releases/$releasever/Everything/source/SRPMS/
+-metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-source-$releasever&arch=$basearch
++mirrorlist=http://pidora.proximity.on.ca/mirrorlist/mirrorlist.cgi?repo=pidora-source-$releasever&arch=$basearch
+ enabled=0
+ #metadata_expire=7d
+ gpgcheck=1
+-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
++gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-pidora-20
+ skip_if_unavailable=False
+-- 
+1.9.3
+

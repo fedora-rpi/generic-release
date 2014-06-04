@@ -4,10 +4,12 @@
 Summary:	Generic release files
 Name:		generic-release
 Version:	20
-Release:	3
+Release:	3.lr1
 License:	GPLv2
 Group:		System Environment/Base
 Source:		%{name}-%{version}.tar.gz
+Patch0:		0001-Add-Pidora-repositories.patch
+Patch1:		0001-Add-Raspberry-Pi-rebuild-repo.patch
 Obsoletes:	redhat-release
 Provides:	redhat-release
 Provides:	system-release
@@ -47,6 +49,8 @@ package. Please note that there is no actual useful content here.
 
 %prep
 %setup -q
+%patch0 -p1
+%patch1 -p1
 
 %build
 
@@ -118,6 +122,7 @@ rm -rf $RPM_BUILD_ROOT
 %config %attr(0644,root,root) /etc/system-release-cpe
 %dir /etc/yum.repos.d
 %config(noreplace) /etc/yum.repos.d/fedora.repo
+%config(noreplace) /etc/yum.repos.d/fedora-rpi.repo
 %config(noreplace) /etc/yum.repos.d/fedora-updates*.repo
 %config(noreplace) %attr(0644,root,root) /etc/issue
 %config(noreplace) %attr(0644,root,root) /etc/issue.net

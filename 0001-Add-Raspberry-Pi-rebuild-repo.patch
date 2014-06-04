@@ -1,0 +1,26 @@
+From 4157fce25b0d885199b93c9d3fae6f66b99494d9 Mon Sep 17 00:00:00 2001
+From: Lubomir Rintel <lkundrak@v3.sk>
+Date: Wed, 4 Jun 2014 15:26:55 +0200
+Subject: [PATCH] Add Raspberry Pi rebuild repo
+
+---
+ fedora-rpi.repo | 7 +++++++
+ 1 file changed, 7 insertions(+)
+ create mode 100644 fedora-rpi.repo
+
+diff --git a/fedora-rpi.repo b/fedora-rpi.repo
+new file mode 100644
+index 0000000..aff9428
+--- /dev/null
++++ b/fedora-rpi.repo
+@@ -0,0 +1,7 @@
++[fedora-rpi]
++name=Raspberry Pi rebuilds of packages from Fedora $releasever - $basearch
++failovermethod=priority
++baseurl=http://fedorapeople.org/~lkundrak/fedora-rpi/20/
++enabled=1
++gpgcheck=0
++skip_if_unavailable=True
+-- 
+1.9.3
+
