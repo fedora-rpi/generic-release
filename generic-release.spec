@@ -1,3 +1,7 @@
+%ifarch armv6hl
+%define _arch arm
+%endif
+
 %define release_name Generic
 %define dist_version 20
 
